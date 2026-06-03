@@ -45,11 +45,16 @@
             android:foregroundServiceType="location" />
 
         <!-- Geofence Broadcast Receiver -->
-        <!-- IMPORTANTE: debe ser exported="true" para que Google Play Services
-             (proceso externo) pueda entregar los eventos de geovalla -->
+        <!-- IMPORTANTE: exported="true" para que Google Play Services (app externa)
+             pueda entregarnos el broadcast. El intent-filter con la action específica
+             es necesario en Android 12+ para que el sistema enrute el broadcast correctamente -->
         <receiver
             android:name=".geofencing.GeofenceBroadcastReceiver"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.wanda.app.ACTION_GEOFENCE_EVENT" />
+            </intent-filter>
+        </receiver>
 
         <!-- Boot Completed Receiver -->
         <receiver

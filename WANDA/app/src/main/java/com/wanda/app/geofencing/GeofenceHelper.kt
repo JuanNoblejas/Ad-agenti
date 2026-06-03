@@ -42,7 +42,9 @@ class GeofenceHelper(private val context: Context) {
     }
 
     fun getGeofencePendingIntent(): PendingIntent {
-        val intent = Intent(context, GeofenceBroadcastReceiver::class.java)
+        val intent = Intent(context, GeofenceBroadcastReceiver::class.java).apply {
+            action = ACTION_GEOFENCE_EVENT  // referencia al companion object
+        }
         val flags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE
         } else {
@@ -68,9 +70,16 @@ class GeofenceHelper(private val context: Context) {
         val request = getGeofencingRequest(geofence)
         val pendingIntent = getGeofencePendingIntent()
 
+        Log.d("GeofenceHelper", "Intentando añadir geofence: $GEOFENCE_ID en lat: $lat, lng: $lng, radio: $radius")
         geofencingClient.addGeofences(request, pendingIntent)
-            .addOnSuccessListener { onSuccess() }
-            .addOnFailureListener { exception -> onFailure(exception) }
+            .addOnSuccessListener { 
+                Log.d("GeofenceHelper", "Geofence añadida exitosamente")
+                onSuccess() 
+            }
+            .addOnFailureListener { exception -> 
+                Log.e("GeofenceHelper", "Error al añadir geofence: ${exception.message}", exception)
+                onFailure(exception) 
+            }
     }
 
     fun removeGeofence(onSuccess: (() -> Unit)? = null, onFailure: ((Exception) -> Unit)? = null) {
@@ -80,8 +89,15 @@ class GeofenceHelper(private val context: Context) {
                 onSuccess?.invoke()
             }
             .addOnFailureListener { exception ->
-                Log.e("GeofenceHelper", "Error al eliminar geofence: ${exception.message}", exception)
+                Log.e(TAG, "Error al eliminar geofence: ${exception.message}", exception)
                 onFailure?.invoke(exception)
             }
+    }
+
+    companion object {
+        private const val TAG = "GeofenceHelper"
+        // CRÍTICO: acción explícita para el PendingIntent.
+        // Sin esto, Android 12+ descarta el broadcast de geofencing silenciosamente.
+        const val ACTION_GEOFENCE_EVENT = "com.wanda.app.ACTION_GEOFENCE_EVENT"
     }
 }
