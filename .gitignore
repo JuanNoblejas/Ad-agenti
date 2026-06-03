@@ -1,0 +1,27 @@
+# Android ignore rules
+**/build/
+**/.gradle/
+**/.idea/
+**/local.properties
+**/*.apk
+**/*.aar
+**/*.ap_
+**/*.aab
+**/out/
+**/*.class
+**/bin/
+**/gen/
+**/.navigation/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+**/metastore/
+**/*.jks
+**/*.keystore
+**/*.log
+**/.DS_Store
+**/*.iml
+
+# System files
+.DS_Store
+Thumbs.db

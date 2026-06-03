@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">WANDA</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Inicio</string>
+    <string name="nav_shopping">Compras</string>
+    <string name="nav_history">Historial</string>
+
+    <!-- Home Status -->
+    <string name="status_at_home">Estás en casa</string>
+    <string name="status_away">Has salido</string>
+    <string name="status_unknown">Sin datos</string>
+
+    <!-- Home Buttons -->
+    <string name="btn_set_home">Establecer mi casa aquí</string>
+    <string name="btn_edit_home">Editar coordenadas</string>
+
+    <!-- Tracking -->
+    <string name="btn_start_tracking">Activar rastreo</string>
+    <string name="btn_stop_tracking">Desactivar rastreo</string>
+    <string name="tracking_active">Rastreo activo</string>
+    <string name="tracking_inactive">Rastreo inactivo</string>
+
+    <!-- Events -->
+    <string name="last_event">Último evento</string>
+    <string name="no_events">Sin eventos registrados</string>
+
+    <!-- Shopping -->
+    <string name="shopping_title">Lista de la Compra</string>
+    <string name="add_item">Añadir artículo</string>
+    <string name="item_name_hint">Nombre del artículo</string>
+    <string name="btn_add">Añadir</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_delete_checked">Eliminar tachados</string>
+    <string name="empty_list">Tu lista está vacía</string>
+
+    <!-- History -->
+    <string name="history_title">Historial de Movimientos</string>
+    <string name="event_exit">Salida</string>
+    <string name="event_enter">Entrada</string>
+    <string name="empty_history">No hay movimientos registrados</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel">Rastreo de Ubicación</string>
+    <string name="notification_tracking_title">WANDA - Rastreo activo</string>
+    <string name="notification_tracking_text">Monitorizando tu ubicación</string>
+    <string name="notification_exit_title">Has salido de casa</string>
+    <string name="notification_exit_text">Se ha registrado tu salida</string>
+    <string name="notification_enter_title">Has llegado a casa</string>
+    <string name="notification_enter_text">Bienvenido/a de vuelta</string>
+
+    <!-- Permissions -->
+    <string name="permission_location_title">Permiso de ubicación</string>
+    <string name="permission_location_message">WANDA necesita acceder a tu ubicación para saber cuándo sales y llegas a casa.</string>
+    <string name="permission_background_title">Ubicación en segundo plano</string>
+    <string name="permission_background_message">Para funcionar correctamente, WANDA necesita acceder a tu ubicación incluso cuando la aplicación está cerrada.</string>
+    <string name="permission_notification_title">Notificaciones</string>
+    <string name="permission_notification_message">WANDA quiere enviarte notificaciones cuando salgas o llegues a casa.</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_set_home_title">Establecer casa</string>
+    <string name="dialog_set_home_message">¿Quieres guardar tu ubicación actual como tu casa?</string>
+    <string name="dialog_edit_coords_title">Editar coordenadas</string>
+    <string name="latitude_hint">Latitud</string>
+    <string name="longitude_hint">Longitud</string>
+    <string name="radius_hint">Radio (metros)</string>
+    <string name="btn_save">Guardar</string>
+    <string name="home_set_success">Casa establecida correctamente</string>
+    <string name="home_not_set">No has establecido tu casa todavía</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_delete">¿Eliminar este artículo?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+</resources>
