@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1565C0</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="primaryLight">#42A5F5</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#D1E4FF</color>
+    <color name="onPrimaryContainer">#001D36</color>
+
+    <!-- Secondary Colors -->
+    <color name="secondary">#FF8F00</color>
+    <color name="secondaryDark">#FF6F00</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#FFDDB3</color>
+    <color name="onSecondaryContainer">#261900</color>
+
+    <!-- Background and Surface -->
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onBackground">#212121</color>
+    <color name="onSurface">#212121</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#616161</color>
+
+    <!-- Status Colors -->
+    <color name="error">#D32F2F</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="success">#388E3C</color>
+
+    <!-- App-Specific Status Colors -->
+    <color name="atHome">#388E3C</color>
+    <color name="away">#F57C00</color>
+
+    <!-- UI Element Colors -->
+    <color name="checkedItem">#9E9E9E</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="bottomNavBackground">#FFFFFF</color>
+    <color name="statusCardBackground">#E3F2FD</color>
+</resources>
