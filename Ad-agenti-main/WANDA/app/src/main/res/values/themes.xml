@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Application Theme -->
+    <style name="Theme.Wanda" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/onPrimaryContainer</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
+        <item name="colorSecondaryContainer">@color/secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/onSecondaryContainer</item>
+
+        <!-- Background and Surface -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/onSurface</item>
+        <item name="colorOnBackground">@color/onBackground</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/onError</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+
+        <!-- Default text appearance for accessibility -->
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <!-- Toolbar Theme -->
+    <style name="Theme.Wanda.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/onPrimary</item>
+        <item name="subtitleTextColor">@color/onPrimary</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:minHeight">64dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="Theme.Wanda.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/bottomNavBackground</item>
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/primary</item>
+        <item name="itemIconSize">@dimen/bottom_nav_icon_size</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Theme.Wanda.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">@dimen/padding_large</item>
+        <item name="android:paddingEnd">@dimen/padding_large</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/onPrimary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Theme.Wanda.Button.Secondary" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">@dimen/padding_large</item>
+        <item name="android:paddingEnd">@dimen/padding_large</item>
+        <item name="backgroundTint">@color/secondary</item>
+        <item name="android:textColor">@color/onSecondary</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Theme.Wanda.Button.Danger" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">@dimen/padding_large</item>
+        <item name="android:paddingEnd">@dimen/padding_large</item>
+        <item name="backgroundTint">@color/error</item>
+        <item name="android:textColor">@color/onError</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Theme.Wanda.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="contentPadding">@dimen/padding_normal</item>
+    </style>
+
+</resources>

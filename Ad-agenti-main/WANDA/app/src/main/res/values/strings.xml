@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">WANDA</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_shopping">Shopping</string>
+    <string name="nav_history">History</string>
+
+    <!-- Home Status -->
+    <string name="status_at_home">You are at home</string>
+    <string name="status_away">You have left</string>
+    <string name="status_unknown">No data</string>
+
+    <!-- Home Buttons -->
+    <string name="btn_set_home">Set my home here</string>
+    <string name="btn_edit_home">Edit coordinates</string>
+
+    <!-- Tracking -->
+    <string name="btn_start_tracking">Start tracking</string>
+    <string name="btn_stop_tracking">Stop tracking</string>
+    <string name="tracking_active">Tracking active</string>
+    <string name="tracking_inactive">Tracking inactive</string>
+
+    <!-- Events -->
+    <string name="last_event">Last event</string>
+    <string name="no_events">No events recorded</string>
+
+    <!-- Shopping -->
+    <string name="shopping_title">Shopping List</string>
+    <string name="add_item">Add item</string>
+    <string name="item_name_hint">Item name</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete_checked">Delete checked items</string>
+    <string name="empty_list">Your list is empty</string>
+
+    <!-- History -->
+    <string name="history_title">Movement History</string>
+    <string name="event_exit">Exit</string>
+    <string name="event_enter">Entry</string>
+    <string name="empty_history">No movements recorded</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel">Location Tracking</string>
+    <string name="notification_tracking_title">WANDA - Tracking active</string>
+    <string name="notification_tracking_text">Monitoring your location</string>
+    <string name="notification_exit_title">You have left home</string>
+    <string name="notification_exit_text">Your departure has been recorded</string>
+    <string name="notification_enter_title">You have arrived home</string>
+    <string name="notification_enter_text">Welcome back</string>
+
+    <!-- Permissions -->
+    <string name="permission_location_title">Location permission</string>
+    <string name="permission_location_message">WANDA needs access to your location to know when you leave and arrive home.</string>
+    <string name="permission_background_title">Background location</string>
+    <string name="permission_background_message">To work properly, WANDA needs access to your location even when the app is closed.</string>
+    <string name="permission_notification_title">Notifications</string>
+    <string name="permission_notification_message">WANDA wants to send you notifications when you leave or arrive home.</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_set_home_title">Set home</string>
+    <string name="dialog_set_home_message">Do you want to save your current location as your home?</string>
+    <string name="dialog_edit_coords_title">Edit coordinates</string>
+    <string name="latitude_hint">Latitude</string>
+    <string name="longitude_hint">Longitude</string>
+    <string name="radius_hint">Radius (meters)</string>
+    <string name="btn_save">Save</string>
+    <string name="home_set_success">Home set successfully</string>
+    <string name="home_not_set">You have not set your home yet</string>
+
+    <!-- Confirmation -->
+    <string name="confirm_delete">Delete this item?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
