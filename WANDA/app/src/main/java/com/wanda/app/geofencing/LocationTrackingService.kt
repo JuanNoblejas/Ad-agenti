@@ -73,15 +73,33 @@ class LocationTrackingService : Service() {
         val longitude = preferencesManager.homeLongitude
         val radius = preferencesManager.geofenceRadius
 
-        geofenceHelper.addGeofence(
-            lat = latitude,
-            lng = longitude,
-            radius = radius,
+        geofenceHelper.removeGeofence(
             onSuccess = {
-                Log.d(TAG, "Geofence added successfully at ($latitude, $longitude) with radius $radius m")
+                Log.d(TAG, "Geofence anterior eliminada, añadiendo nueva...")
+                geofenceHelper.addGeofence(
+                    lat = latitude,
+                    lng = longitude,
+                    radius = radius,
+                    onSuccess = {
+                        Log.d(TAG, "Geofence añadida en ($latitude, $longitude) radio: $radius m")
+                    },
+                    onFailure = { exception ->
+                        Log.e(TAG, "Error al añadir geofence: ${exception.message}", exception)
+                    }
+                )
             },
-            onFailure = { exception ->
-                Log.e(TAG, "Failed to add geofence: ${exception.message}", exception)
+            onFailure = {
+                geofenceHelper.addGeofence(
+                    lat = latitude,
+                    lng = longitude,
+                    radius = radius,
+                    onSuccess = {
+                        Log.d(TAG, "Geofence añadida en ($latitude, $longitude) radio: $radius m")
+                    },
+                    onFailure = { exception ->
+                        Log.e(TAG, "Error al añadir geofence: ${exception.message}", exception)
+                    }
+                )
             }
         )
     }
